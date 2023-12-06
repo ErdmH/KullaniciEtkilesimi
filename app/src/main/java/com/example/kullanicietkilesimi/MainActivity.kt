@@ -2,6 +2,7 @@ package com.example.kullanicietkilesimi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.PopupMenu
@@ -20,10 +21,12 @@ class MainActivity : AppCompatActivity() {
             when(item.itemId){
                 R.id.menuItemSil -> {
                     Toast.makeText(applicationContext, "Sil Seçildi", Toast.LENGTH_LONG).show()
+                    Log.e("Debug->","Sil Seçildi")
                     true
                 }
                 R.id.menuItemDuzenle -> {
                     Toast.makeText(applicationContext, "Düzenle Seçildi", Toast.LENGTH_LONG).show()
+                    Log.e("Debug->","Düzenlendi Seçildi")
                     true
                 }else -> false
             }
